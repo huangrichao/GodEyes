@@ -1,0 +1,14 @@
+var fs = require('fs');
+//通过传回来的页数，进行分页模拟
+function pagination(p,s){
+    //p为页数，比如第一页传0，第二页传1,s为每页多少条数据
+    fs.readFile('12.json',function(err,data){
+        if(err){
+            console.error(err);
+        }
+        var person = data.toString();
+        person = JSON.parse(person);
+        //把数据读出来
+        console.log(person);
+    })
+}

@@ -1,0 +1,13 @@
+{
+    "components": "lib/_components/@alife",
+    "scssIndex": "lib/index.scss",
+    "prefix": "next-",
+    "entries": {
+        "core": {
+            "entry": {
+                "core.scss": "lib/_components/@alife/next-core/lib/next.scss",
+                "global.scss": "lib/_components/@alife/next-core/lib/index.scss"
+            }
+        }
+    }
+}

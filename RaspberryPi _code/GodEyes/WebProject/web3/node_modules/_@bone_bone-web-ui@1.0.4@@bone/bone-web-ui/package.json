@@ -1,0 +1,37 @@
+{
+  "name": "@bone/bone-web-ui",
+  "version": "1.0.4",
+  "description": "bone web ui",
+  "main": "index",
+  "scripts": {
+    "update": "tnpm install && tnpm install @alife/next@0.19.24 && node copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:bone/bone-web-ui.git"
+  },
+  "dependencies": {
+    "async-validator": "^1.6.7",
+    "classnames": "^2.2.3",
+    "cropperjs": "^0.7.1",
+    "deep-assign": "^2.0.0",
+    "enquire.js": "^2.1.6",
+    "object-assign": "^4.1.0",
+    "prop-types": "^15.5.10",
+    "react-transition-group": "^1.2.1"
+  },
+  "devDependencies": {
+    "fs-extra": "4.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "moment": "^2.20.1",
+    "react-addons-transition-group": "^15.0.0"
+  },
+  "keywords": [
+    "bone-web-ui"
+  ],
+  "author": "emily.lm@alibaba-inc.com",
+  "license": "ISC",
+  "_from": "@bone/bone-web-ui@1.0.4",
+  "_resolved": "https://npm.aliplus.com/api/@bone/bone-web-ui/download/@bone/bone-web-ui-1.0.4.tgz"
+}

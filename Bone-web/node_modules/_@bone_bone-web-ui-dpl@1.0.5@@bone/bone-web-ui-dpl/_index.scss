@@ -1,0 +1,8 @@
+// 引用主题变量
+@import "variables.scss";
+
+// 引用基础主题
+@import "~@bone/bone-web-ui/_index.scss";
+
+// 主题自定义图标
+@import "icons.scss";

@@ -1,0 +1,420 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _objectWithoutProperties2 = require("babel-runtime/helpers/objectWithoutProperties");
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+var _extends2 = require("babel-runtime/helpers/extends");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _defineProperty2 = require("babel-runtime/helpers/defineProperty");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = require("babel-runtime/helpers/classCallCheck");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = require("babel-runtime/helpers/createClass");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = require("babel-runtime/helpers/inherits");
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _symbol = require("babel-runtime/core-js/symbol");
+
+var _symbol2 = _interopRequireDefault(_symbol);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = require("react-redux");
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _boneMv = require("@bone/bone-mv");
+
+var _constants = require("./constants");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var UNCONNECT = (0, _symbol2.default)("unconnect");
+var DISPATCHES = (0, _symbol2.default)("dispatches");
+var $viewId = (0, _symbol2.default)("view-id");
+
+var viewIndexHash = {};
+
+var actionType = {
+    pop: (0, _symbol2.default)("pop"),
+    push: (0, _symbol2.default)("push"),
+    replace: (0, _symbol2.default)("replace"),
+    update: (0, _symbol2.default)("update")
+};
+
+var connectContextTypes = {
+    // 模型缓存
+    modelCache: _propTypes2.default.object,
+    // view嵌套层级，用来生成viewId
+    viewLevel: _propTypes2.default.number
+};
+
+function getUpNumber(number) {
+    return typeof number === "number" ? number + 1 : 0;
+}
+
+/**
+ * 连接View和Model
+ * 根据viewType及action来决定，使用当前的Model实例、使用缓存的Model实例、还是创建新的Model实例
+ * layout:
+ *      mount:
+ *          POP:
+ *              使用缓存的Model实例
+ * 
+ *              pop model栈
+ *          PUSH:
+ *              创建新的Model实例
+ * 
+ *              push model栈
+ *          REPLACE:
+ *              创建新的Model实例
+ * 
+ *              如果当前Model实例被上一个URL使用，则push栈，否则replace栈
+ *      update:
+ *          使用当前的Model实例
+ * page:
+ *      PUSH:
+ *          创建新的Model实例
+ * 
+ *          push 栈
+ *      POP:
+ *          使用缓存的Model实例
+ * 
+ *          pop 栈
+ *      REPLACE:
+ *          创建新的Model实例
+ * 
+ *          replace栈
+ *      UPDATE:
+ *          使用当前Model实例
+ * undefined:
+ */
+// todo: page没有绑定Model的时候，子组件Model路由缓存如何处理
+
+var ConnectComponent = function (_Component) {
+    (0, _inherits3.default)(ConnectComponent, _Component);
+
+    function ConnectComponent() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        (0, _classCallCheck3.default)(this, ConnectComponent);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ConnectComponent.__proto__ || (0, _getPrototypeOf2.default)(ConnectComponent)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            context: _this.context
+        }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+    }
+
+    (0, _createClass3.default)(ConnectComponent, [{
+        key: "updateViewId",
+        value: function updateViewId(context) {
+            if (!this[$viewId] || this[$viewId].pathname !== context.location.pathname) {
+                var pathname = context.location.pathname;
+                var level = getUpNumber(context.viewLevel);
+
+                if (level === 0) {
+                    viewIndexHash[pathname] = {};
+                }
+
+                var index = viewIndexHash[pathname][level] = getUpNumber(viewIndexHash[pathname][level]);
+
+                this[$viewId] = {
+                    pathname: pathname,
+                    id: [level, index].join("-")
+                };
+
+                this.action = {
+                    "PUSH": actionType.push,
+                    "REPLACE": actionType.replace,
+                    "POP": actionType.pop
+                }[context.history.action];
+            } else {
+                this.action = actionType.update;
+            }
+        }
+    }, {
+        key: "refreshPageModel",
+        value: function refreshPageModel(action, props, context) {
+            switch (action) {
+                case actionType.pop:
+                    {
+                        context.pageStacks.go(context.location.key);
+                        var model = context.pageStacks.current;
+
+                        if (!model) {
+                            model = (0, _defineProperty3.default)({}, this[$viewId].id, _boneMv.modelUtils.instantiation(props.$model));
+                            // history初始化时action类型是POP
+                            context.pageStacks.init(context.location.key, model);
+                        }
+
+                        this.modelCache = model;
+
+                        this.useModel(context.store, props.$view, model[this[$viewId].id], !!props.$ref);
+                    }
+                    break;
+                case actionType.push:
+                    {
+                        var _model2 = this.modelCache = (0, _defineProperty3.default)({}, this[$viewId].id, _boneMv.modelUtils.instantiation(props.$model));
+                        context.pageStacks.push(context.location.key, _model2);
+
+                        this.useModel(context.store, props.$view, _model2[this[$viewId].id], !!props.$ref);
+                    }
+                    break;
+                case actionType.replace:
+                    {
+                        var _model3 = this.modelCache = (0, _defineProperty3.default)({}, this[$viewId].id, _boneMv.modelUtils.instantiation(props.$model));
+                        context.pageStacks.replace(context.location.key, _model3);
+
+                        this.useModel(context.store, props.$view, _model3[this[$viewId].id], !!props.$ref);
+                    }
+                    break;
+                case actionType.update:
+                    {
+                        //
+                    }
+                    break;
+            }
+        }
+    }, {
+        key: "refreshNormalModel",
+        value: function refreshNormalModel(action, props, context) {
+            switch (action) {
+                case actionType.pop:
+                    {
+                        var model = context.modelCache[this[$viewId].id];
+                        if (!model) {
+                            context.modelCache[this[$viewId].id] = model = _boneMv.modelUtils.instantiation(props.$model);
+                        }
+
+                        this.useModel(context.store, props.$view, model, !!props.$ref);
+                    }
+                    break;
+                case actionType.push:
+                case actionType.replace:
+                    {
+                        var _model4 = context.modelCache[this[$viewId].id] = _boneMv.modelUtils.instantiation(props.$model);
+
+                        this.useModel(context.store, props.$view, _model4, !!props.$ref);
+                    }
+                    break;
+                case actionType.update:
+                    {
+                        //
+                    }
+                    break;
+            }
+        }
+    }, {
+        key: "useModel",
+        value: function useModel(store, View, model, withRef) {
+            var _this2 = this;
+
+            // 如果当前view已连接model，则先断开连接
+            if (this[UNCONNECT]) {
+                this[UNCONNECT]();
+            }
+
+            this.model = model;
+
+            // 与新的model建立连接
+
+            var _modelUtils$connect = _boneMv.modelUtils.connect(store, model),
+                dispatches = _modelUtils$connect.dispatches,
+                unconnect = _modelUtils$connect.unconnect,
+                mapStateToProps = _modelUtils$connect.mapStateToProps;
+
+            this[DISPATCHES] = dispatches;
+            this[UNCONNECT] = unconnect;
+
+            this.setState({
+                view: (0, _reactRedux.connect)(mapStateToProps, function () {
+                    return {
+                        actions: _this2[DISPATCHES]
+                    };
+                }, function (stateProps, dispatchProps, ownProps) {
+                    return (0, _extends3.default)({}, ownProps, dispatchProps, stateProps);
+                }, {
+                    withRef: withRef
+                })(View)
+            });
+        }
+    }, {
+        key: "componentWillMount",
+        value: function componentWillMount() {
+            var _this3 = this;
+
+            this.updateViewId(this.context);
+
+            if (this.props.__viewType === _constants.viewType.layout) {
+                switch (this.context.history.action) {
+                    case "POP":
+                        {
+                            this.context.layoutStacks.go(this.context.location.key);
+                            var model = this.context.layoutStacks.current;
+
+                            if (!model) {
+                                model = _boneMv.modelUtils.instantiation(this.props.$model);
+                                // history初始化时action类型是POP
+                                this.context.layoutStacks.init(this.context.location.key, model);
+                            }
+
+                            this.useModel(this.context.store, this.props.$view, model, !!this.props.$ref);
+                        }
+                        break;
+                    case "PUSH":
+                        {
+                            var _model5 = _boneMv.modelUtils.instantiation(this.props.$model);
+                            this.context.layoutStacks.push(this.context.location.key, _model5);
+
+                            this.useModel(this.context.store, this.props.$view, _model5, !!this.props.$ref);
+                        }
+                        break;
+                    case "REPLACE":
+                        {
+                            var _model6 = _boneMv.modelUtils.instantiation(this.props.$model);
+                            this.context.layoutStacks.replace(this.context.location.key, _model6);
+
+                            this.useModel(this.context.store, this.props.$view, _model6, !!this.props.$ref);
+                        }
+                        break;
+                }
+            } else if (!this.context.modelCache) {
+                // }else if(this.props.__viewType === viewType.page){
+                this.refreshPageModel(this.action, this.props, this.context);
+            } else {
+                this.refreshNormalModel(this.action, this.props, this.context);
+            }
+
+            if (this.context.unconnects) {
+                this.context.unconnects.push(function () {
+                    _this3[UNCONNECT]();
+                });
+            }
+        }
+    }, {
+        key: "componentWillReceiveProps",
+        value: function componentWillReceiveProps(nextProps, nextContext) {
+            this.setState({
+                context: nextContext
+            });
+
+            this.updateViewId(nextContext);
+
+            if (nextProps.__viewType === _constants.viewType.layout) {
+                switch (nextContext.history.action) {
+                    case "POP":
+                        nextContext.layoutStacks.go(nextContext.location.key);
+                        break;
+                    case "PUSH":
+                        nextContext.layoutStacks.push(nextContext.location.key, this.model);
+                        break;
+                }
+            } else if (!this.context.modelCache) {
+                // }else if(this.props.__viewType === viewType.page){
+                this.refreshPageModel(this.action, nextProps, nextContext);
+            } else {
+                this.refreshNormalModel(this.action, nextProps, nextContext);
+            }
+        }
+    }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+            this[UNCONNECT]();
+        }
+    }, {
+        key: "getChildContext",
+        value: function getChildContext() {
+            return {
+                dispatches: this[DISPATCHES],
+                modelCache: this.modelCache || this.state.context.modelCache,
+                viewLevel: getUpNumber(this.state.context.viewLevel)
+            };
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this4 = this;
+
+            var _props = this.props,
+                $view = _props.$view,
+                $model = _props.$model,
+                props = (0, _objectWithoutProperties3.default)(_props, ["$view", "$model"]);
+
+            // 将组件通过ref传递出去
+
+            if (typeof props.$ref === "function") {
+                var ref = props.$ref;
+                props.ref = function (connectInstance) {
+                    if (connectInstance) {
+                        ref(connectInstance.wrappedInstance);
+                    }
+                };
+                delete props.$ref;
+            } else if (props.$ref === true) {
+                props.ref = function (connectInstance) {
+                    if (connectInstance) {
+                        _this4.wrappedInstance = connectInstance.wrappedInstance;
+                    }
+                };
+                delete props.$ref;
+            }
+
+            return _react2.default.createElement(this.state.view, props);
+        }
+    }]);
+    return ConnectComponent;
+}(_react.Component);
+
+ConnectComponent.propTypes = {
+    $view: _propTypes2.default.func,
+    $model: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.array]),
+    // view类型
+    __viewType: _propTypes2.default.oneOf([_constants.viewType.layout, _constants.viewType.page])
+};
+ConnectComponent.contextTypes = (0, _extends3.default)({
+    store: _propTypes2.default.object,
+    history: _propTypes2.default.object,
+    location: _propTypes2.default.object,
+    // layout model栈
+    layoutStacks: _propTypes2.default.object,
+    // page model栈
+    pageStacks: _propTypes2.default.object,
+    // 用于服务端渲染，收集所有的ConnectComponent实例的unconnect方法
+    unconnects: _propTypes2.default.array
+}, connectContextTypes);
+ConnectComponent.childContextTypes = (0, _extends3.default)({
+    dispatches: _propTypes2.default.object
+}, connectContextTypes);
+exports.default = ConnectComponent;

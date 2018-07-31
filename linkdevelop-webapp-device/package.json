@@ -1,0 +1,15 @@
+{
+  "name": "linkedevelop-webapp-rgblight",
+  "version": "0.0.1",
+  "description": "linkedevelop-webapp-rgblight",
+  "main": "app.js",
+  "dependencies": {
+    "@bone/bone-web-ui": "^1.0.0",
+    "@bone/bone-web-ui-dpl": "^1.0.0",
+    "@bone/iot-gateway": "^2.0.3",
+    "@bone/web": "^0.1.0",
+    "react": "^16.0.0",
+    "react-color": "^2.14.1",
+    "react-dom": "^16.0.0"
+  }
+}

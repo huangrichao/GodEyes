@@ -1,0 +1,53 @@
+{
+  "name": "@bone/bone-mv",
+  "version": "0.1.13",
+  "description": "基于React + Redux提供Model + View开发模型",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest src/**/*.test.js --coverage",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:bone/bone-mv.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "view-model"
+  ],
+  "author": "biezhen.lf@alibaba-inc.com",
+  "license": "ISC",
+  "dependencies": {
+    "@bone/redux-dynamic": "^0.1.0",
+    "babel-runtime": "^6.26.0",
+    "prop-types": "^15.6.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "bnpm": {
+    "mode": "yarn"
+  },
+  "_from": "@bone/bone-mv@0.1.13",
+  "_resolved": "https://npm.aliplus.com/api/@bone/bone-mv/download/@bone/bone-mv-0.1.13.tgz"
+}

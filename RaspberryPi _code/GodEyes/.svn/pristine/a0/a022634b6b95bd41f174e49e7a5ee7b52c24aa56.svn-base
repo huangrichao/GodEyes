@@ -1,0 +1,2583 @@
+// ------------------------ theme variables ------------------------ //
+
+
+// ------------------------ color ------------------------ //
+
+$color-white: #FFFFFF;
+
+$color-black: #141617;
+
+$color-transparent: transparent;
+
+$color-brand1-1: #33CDE5;
+
+$color-brand1-2: #FFFFFF;
+
+$color-brand1-3: #FFC8A3;
+
+$color-brand1-4: #FFAC75;
+
+$color-brand1-5: #FF8B3D;
+
+$color-brand1-6: #00C1DE;
+
+$color-brand1-7: #D3D5D5;
+
+$color-brand1-8: #F5F7F9;
+
+$color-brand1-9: #0BA5BD;
+
+$color-brand1-10: #85888D;
+
+$color-brand2-1: #FF8A00;
+
+$color-brand2-2: #F15533;
+
+$color-brand2-3: #35B34A;
+
+$color-brand2-6: #4A5064;
+
+$color-brand7-6: #4F74B3;
+
+$color-brand7-9: #2D559C;
+
+$color-error-1: #FEEEEB;
+
+$color-error-2: #F15532;
+
+$color-error-3: #FFC89F;
+
+$color-fill1-1: #FAFAFC;
+
+$color-fill1-2: #F5F6FA;
+
+$color-fill1-3: #D7D8D9;
+
+$color-fill1-4: #C3C5C6;
+
+$color-help-1: #FDF5FF;
+
+$color-help-2: #B921F3;
+
+$color-help-3: #A116D9;
+
+$color-line1-1: #F5F5F6;
+
+$color-line1-2: #EBECEC;
+
+$color-line1-3: #D7D8D9;
+
+$color-line1-4: #C3C5C6;
+
+$color-link-1: #00C1DE;
+
+$color-link-2: #33CDE5;
+
+$color-link-3: #00B7D3;
+
+$color-notice-1: #E6F9FC;
+
+$color-notice-2: #00C1DE;
+
+$color-notice-3: #A5E0EE;
+
+$color-other-1: #DAEEFF;
+
+$color-other-2: #0089FD;
+
+$color-other-3: #306AC9;
+
+$color-success-1: #EBF7ED;
+
+$color-success-2: #44CB42;
+
+$color-success-3: #35B34A;
+
+$color-text1-1: #D7D8D9;
+
+$color-text1-2: #C3C5C6;
+
+$color-text1-3: #9B9EA0;
+
+$color-text1-4: #73777A;
+
+$color-text1-5: #373D41;
+
+$color-warning-1: #FFF3E6;
+
+$color-warning-2: #FF8A00;
+
+$color-warning-3: #FFE89C;
+
+$color-brand2-4: #333745;
+
+$color-brand2-5: #42485B;
+
+$color-brand2-7: #373D41;
+
+$color-brand2-8: #4B5063;
+
+$color-brand2-9: #272B2F;
+
+$color-brand2-10: #EBEDEF;
+
+$color-brand7-1: #74808F;
+
+$color-brand7-2: #CACACA;
+
+$color-brand7-3: #CECFD0;
+
+
+
+
+// ------------------------ corner ------------------------ //
+
+$corner-0: 0px;
+
+$corner-1: 0px;
+
+$corner-2: 2px;
+
+$corner-3: 4px;
+
+$corner-4: 8px;
+
+$corner-5: 16px;
+
+
+
+
+// ------------------------ font ------------------------ //
+
+$font-family-base: Helvetica, "Helvetica Neue", Tahoma, Arial, "Microsoft YaHei", "PingFang SC";
+
+$font-weight-1: lighter;
+
+$font-weight-2: normal;
+
+$font-weight-3: bold;
+
+$font-size-display-3: 28px;
+
+$font-size-display-2: 24px;
+
+$font-size-display-1: 20px;
+
+$font-size-headline: 18px;
+
+$font-size-title: 16px;
+
+$font-size-subhead: 14px;
+
+$font-size-body-2: 14px;
+
+$font-size-body-1: 12px;
+
+$font-size-caption: 12px;
+
+$font-lineheight-1: 1;
+
+$font-lineheight-2: 1.5;
+
+$font-lineheight-3: 1.6;
+
+$font-lineheight-4: 1.8;
+
+$font-lineheight-5: 2;
+
+
+
+
+// ------------------------ icon ------------------------ //
+
+$icon-font-path: "//at.alicdn.com/t/font_380684_tomqj7f92ne9udi";
+
+$icon-font-name: "icon";
+
+$icon-xxs: 8px;
+
+$icon-xs: 12px;
+
+$icon-s: 16px;
+
+$icon-m: 20px;
+
+$icon-l: 32px;
+
+$icon-xl: 40px;
+
+$icon-xxl: 48px;
+
+$icon-xxxl: 56px;
+
+$icon-content-arrow-left: "\e6a3";
+
+$icon-content-delete-filling: "\e6a2";
+
+$icon-content-arrow-double-right: "\e69d";
+
+$icon-content-arrow-double-left: "\e69c";
+
+$icon-content-loading: "\e69b";
+
+$icon-content-survey: "\e69a";
+
+$icon-content-tag-subscript: "\e699";
+
+$icon-content-semi-select: "\e698";
+
+$icon-content-close: "\e697";
+
+$icon-content-picture: "\e696";
+
+$icon-content-success-filling: "\e695";
+
+$icon-content-descending: "\e694";
+
+$icon-content-ascending: "\e693";
+
+$icon-content-sorting: "\e692";
+
+$icon-content-arrow-down-filling: "\e691";
+
+$icon-content-prompt: "\e690";
+
+$icon-content-category: "\e68f";
+
+$icon-content-display: "\e68e";
+
+$icon-content-search: "\e68d";
+
+$icon-content-warning: "\e68c";
+
+$icon-content-success: "\e68b";
+
+$icon-content-time: "\e68a";
+
+$icon-content-calendar: "\e689";
+
+$icon-content-ashbin: "\e688";
+
+$icon-content-select: "\e687";
+
+$icon-content-error: "\e686";
+
+$icon-content-edit: "\e685";
+
+$icon-content-minus: "\e683";
+
+$icon-content-add: "\e682";
+
+$icon-content-arrow-up: "\e681";
+
+$icon-content-arrow-down: "\e680";
+
+$icon-content-arrow-right: "\e67e";
+
+$icon-content-arrow-up-filling: "\e67d";
+
+$icon-content-personal-center: "\e67c";
+
+$icon-content-smile: "\e67b";
+
+$icon-content-mobile-phone: "\e67a";
+
+$icon-content-credit-level-filling: "\e679";
+
+$icon-content-credit-level: "\e678";
+
+$icon-content-account-filling: "\e677";
+
+$icon-content-favorites-filling: "\e676";
+
+$icon-content-email-filling: "\e675";
+
+$icon-content-ellipsis: "\e674";
+
+$icon-content-phone: "\e673";
+
+$icon-content-store: "\e672";
+
+$icon-content-share: "\e671";
+
+$icon-content-security: "\e670";
+
+$icon-content-compass: "\e66f";
+
+$icon-content-stop: "\e66e";
+
+$icon-content-play: "\e66d";
+
+$icon-content-skip: "\e66c";
+
+$icon-content-good: "\e66b";
+
+$icon-content-bad: "\e66a";
+
+$icon-content-map: "\e669";
+
+$icon-content-download: "\e668";
+
+$icon-content-operation: "\e667";
+
+$icon-content-office: "\e666";
+
+$icon-content-dollar: "\e665";
+
+$icon-content-subtract: "\e661";
+
+$icon-content-move: "\e660";
+
+$icon-content-text: "\e65f";
+
+$icon-content-image-text: "\e65e";
+
+$icon-content-nav-list: "\e65d";
+
+$icon-content-table: "\e65c";
+
+$icon-content-cut: "\e65b";
+
+$icon-content-link: "\e65a";
+
+$icon-content-similar-product: "\e659";
+
+$icon-content-history: "\e658";
+
+$icon-content-pin: "\e657";
+
+$icon-content-filter: "\e656";
+
+$icon-content-compare: "\e655";
+
+$icon-content-scanning: "\e654";
+
+$icon-content-atm-away: "\e653";
+
+$icon-content-browse: "\e652";
+
+$icon-content-box: "\e64b";
+
+$icon-content-print: "\e64a";
+
+$icon-content-service: "\e649";
+
+$icon-content-discount: "\e648";
+
+$icon-content-4column: "\e647";
+
+$icon-content-3column: "\e646";
+
+$icon-content-attachment: "\e645";
+
+$icon-content-clock: "\e644";
+
+$icon-content-atm: "\e643";
+
+$icon-content-account: "\e664";
+
+$icon-content-training: "\e642";
+
+$icon-content-set: "\e641";
+
+$icon-content-refresh: "\e640";
+
+$icon-content-help: "\e63f";
+
+$icon-content-form: "\e63e";
+
+$icon-content-folder: "\e63d";
+
+$icon-content-favorite: "\e63c";
+
+$icon-content-email: "\e663";
+
+$icon-content-cry: "\e63b";
+
+$icon-content-comments: "\e63a";
+
+$icon-content-cart: "\e639";
+
+$icon-content-all: "\e662";
+
+$icon-content-auto: "\e651";
+
+$icon-content-lights: "\e650";
+
+$icon-content-gifts: "\e64f";
+
+$icon-content-electronics: "\e64e";
+
+$icon-content-bags: "\e64d";
+
+$icon-content-process: "\e64c";
+
+
+
+
+// ------------------------ line ------------------------ //
+
+$line-1: 1px;
+
+$line-2: 2px;
+
+$line-3: 3px;
+
+
+
+
+// ------------------------ shadow ------------------------ //
+
+$shadow-sides-base: "base";
+
+$shadow-sides-up: "up";
+
+$shadow-sides-right: "right";
+
+$shadow-sides-down: "down";
+
+$shadow-sides-left: "left";
+
+$shadow-distance-sd1: 0;
+
+$shadow-distance-sd2: 0;
+
+$shadow-distance-sd3: 0;
+
+$shadow-distance-sd4: 0;
+
+$shadow-distance-sd5: 0;
+
+$shadow-opacity-sd1: 0.32;
+
+$shadow-opacity-sd2: 0.32;
+
+$shadow-opacity-sd3: 0.32;
+
+$shadow-opacity-sd4: 0.32;
+
+$shadow-opacity-sd5: 0.32;
+
+$shadow-color-sd1: #373D41;
+
+$shadow-color-sd2: #373D41;
+
+$shadow-color-sd3: #373D41;
+
+$shadow-color-sd4: #373D41;
+
+$shadow-color-sd5: #373D41;
+
+$shadow-blur-sd1: 2;
+
+$shadow-blur-sd2: 4;
+
+$shadow-blur-sd3: 6;
+
+$shadow-blur-sd4: 8;
+
+$shadow-blur-sd5: 10;
+
+$shadow-spread-sd1: 0;
+
+$shadow-spread-sd2: 0;
+
+$shadow-spread-sd3: 0;
+
+$shadow-spread-sd4: 0;
+
+$shadow-spread-sd5: 0;
+
+
+
+
+// ------------------------ size ------------------------ //
+
+$size-base: 4px;
+
+
+
+
+// ------------------------ accordion ------------------------ //
+
+$accordion-border-color: #D7D8D9;
+
+$accordion-content-color: #73777A;
+
+$accordion-title-font-color: #373D41;
+
+$accordion-icon-color: #00C1DE;
+
+$accordion-title-font-size: 12px;
+
+$accordion-content-font-size: 12px;
+
+
+
+
+// ------------------------ badge ------------------------ //
+
+$badge-dot-left-color-bg: #73777A;
+
+$badge-size-dot-border-radius: 4px;
+
+$badge-size-dot-width: 4px;
+
+$badge-dot-margin-left: 8px;
+
+$badge-size-list-margin: 8px;
+
+$badge-color-bg: #F15533;
+
+
+
+
+// ------------------------ balloon ------------------------ //
+
+$balloon-border-corner: 0px;
+
+$balloon-normal-color-border: transparent;
+
+$balloon-normal-color: #373D41;
+
+$balloon-primary-color: #FFFFFF;
+
+$balloon-primary-color-bg: #00C1DE;
+
+$balloon-primary-color-border: transparent;
+
+$balloon-primary-color-close: #EBECEC;
+
+$balloon-primary-color-close-hover: #FFFFFF;
+
+$balloon-primary-shadow: 0px 0px 2px 0px rgba(55, 61, 65, 0.32);
+
+$balloon-size-arrow-margin: 16px;
+
+$balloon-size-arrow-size: 8px;
+
+$balloon-size-close-margin-right: 4px;
+
+$balloon-size-close-margin-top: 4px;
+
+$balloon-size-padding-closable-right: 16px;
+
+$balloon-size-max-width: 280px;
+
+$balloon-size-padding-bottom: 12px;
+
+$balloon-size-padding-left: 12px;
+
+$balloon-size-padding-top: 12px;
+
+$balloon-size-close: 8px;
+
+$balloon-tooltip-size-padding-bottom: 12px;
+
+$balloon-tooltip-size-padding-left: 12px;
+
+$balloon-tooltip-size-padding-right: 12px;
+
+$balloon-tooltip-size-padding-top: 12px;
+
+$balloon-size-padding-right: 12px;
+
+$balloon-tooltip-color-border: #D7D8D9;
+
+$balloon-normal-shadow: 0px 0px 2px 0px rgba(55, 61, 65, 0.32);
+
+$balloon-tooltip-color: #373D41;
+
+
+
+
+// ------------------------ breadcrumb ------------------------ //
+
+$breadcrumb-size-m-icon-size: 8px;
+
+$breadcrumb-text-color: #00C1DE;
+
+$breadcrumb-text-current-color: #73777A;
+
+$breadcrumb-size-m-font-size: 14px;
+
+$breadcrumb-size-number-font-size: 12px;
+
+$breadcrumb-size-keyword-font-size: 12px;
+
+$breadcrumb-icon-color: #73777A;
+
+
+
+
+// ------------------------ button ------------------------ //
+
+$btn-secondary-color: #373D41;
+
+$btn-ghost-light-bg: #FFFFFF;
+
+$btn-ghost-light-bg-hover-opacity: 0;
+
+$btn-ghost-light-bg-hover-rgb: #FFFFFF;
+
+$btn-ghost-light-border-color: #C3C5C6;
+
+$btn-ghost-light-border-color-hover: #C3C5C6;
+
+$btn-ghost-light-color: #373D41;
+
+$btn-normal-color: #373D41;
+
+$btn-secondary-bg: #FAFAFC;
+
+$btn-secondary-bg-hover: #FFFFFF;
+
+$btn-secondary-border-color: #C3C5C6;
+
+$btn-secondary-border-color-hover: #C3C5C6;
+
+$btn-secondary-color-hover: #373D41;
+
+$btn-normal-bg-hover: #CECFD0;
+
+$btn-normal-border-color: #C3C5C6;
+
+$btn-normal-border-color-hover: #C3C5C6;
+
+$btn-border-color-disabled: #D7D8D9;
+
+$btn-warning-normal-bg: #FF8A00;
+
+$btn-warning-normal-bg-hover: #FFFFFF;
+
+$btn-warning-normal-border-color: transparent;
+
+$btn-warning-normal-border-color-hover: #FF8A00;
+
+$btn-warning-normal-color: #FFFFFF;
+
+$btn-warning-normal-color-hover: #FF8A00;
+
+$btn-size-m-height: 32px;
+
+$btn-size-s-height: 24px;
+
+$btn-size-s-icon-size: 12px;
+
+$btn-size-m-icon-size: 12px;
+
+$btn-size-l-font: 12px;
+
+$btn-primary-bg: #00C1DE;
+
+$btn-primary-bg-hover: #0BA5BD;
+
+$btn-text-primary-color: #00C1DE;
+
+$btn-size-l-icon-size: 16px;
+
+$btn-size-m-font: 12px;
+
+$btn-text-normal-color: #373D41;
+
+$btn-text-normal-color-hover: #00C1DE;
+
+$btn-text-primary-color-hover: #00C1DE;
+
+$btn-text-secondary-color-hover: #00C1DE;
+
+$btn-size-l-height: 40px;
+
+$btn-size-s-font: 12px;
+
+$btn-size-l-padding: 16px;
+
+$btn-size-l-icon-margin: 4px;
+
+$btn-normal-bg: #F5F6FA;
+
+$btn-normal-color-hover: #373D41;
+
+$btn-size-l-icon-split-size: 16px;
+
+$btn-ghost-light-color-hover: #373D41;
+
+$btn-text-secondary-color: #373D41;
+
+$btn-text-size-m-font: 12px;
+
+$btn-color-disabled: #C3C5C6;
+
+
+
+
+// ------------------------ calendar ------------------------ //
+
+$calendar-card-cell-hover-color: #FFFFFF;
+
+$calendar-fullscreen-cell-hover-color: #FFFFFF;
+
+$calendar-fullscreen-cell-select-color: #FFFFFF;
+
+$calendar-card-cell-range-color: #FFFFFF;
+
+$calendar-fullscreen-cell-select-border-color: #141617;
+
+$calendar-fullscreen-font-size: 12px;
+
+$calendar-fullscreen-cell-normal-color: #00C1DE;
+
+$calendar-card-cell-normal-color: #373D41;
+
+$calendar-card-cell-select-border-color: transparent;
+
+$calendar-card-font-size: 12px;
+
+$calendar-fullscreen-cell-boder-top-width: 1px;
+
+$calendar-fullscreen-cell-normal-background: transparent;
+
+$calendar-fullscreen-cell-normal-border-color: #EBECEC;
+
+$calendar-fullscreen-cell-other-border-color: #EBECEC;
+
+$calendar-fullscreen-cell-disabled-border-color: #EBECEC;
+
+
+
+
+// ------------------------ card ------------------------ //
+
+$card-title-font-size: 14px;
+
+$card-sub-title-color: #9B9EA0;
+
+$card-title-color: #373D41;
+
+$card-title-prefix-border-color: #00C1DE;
+
+$card-sub-title-font-size: 14px;
+
+$card-body-padding-top: 0;
+
+
+
+
+// ------------------------ cascader ------------------------ //
+
+$cascader-menu-item-hover-background-color: #F5F7F9;
+
+$cascader-menu-item-font-size: 12px;
+
+$cascader-menu-item-color: #373D41;
+
+$cascader-menu-item-hover-color: #373D41;
+
+
+
+
+// ------------------------ checkbox ------------------------ //
+
+$checkbox-bg-color: #FFFFFF;
+
+$checkbox-checked-hovered-circle-color: #00C1DE;
+
+$checkbox-hovered-bg-color: #FFFFFF;
+
+$checkbox-hovered-border-color: #00C1DE;
+
+$checkbox-border-color: #C3C5C6;
+
+$checkbox-checked-border-color: #00C1DE;
+
+$checkbox-checked-hovered-bg-color: #E6F9FC;
+
+$checkbox-checked-bg-color: #FFFFFF;
+
+$checkbox-checked-circle-color: #00C1DE;
+
+$checkbox-border-radius: 2px;
+
+$checkbox-checked-hovered-border-color: #00C1DE;
+
+$checkbox-disabled-border-color: #D7D8D9;
+
+$checkbox-disabled-circle-color: #C3C5C6;
+
+
+
+
+// ------------------------ date-picker ------------------------ //
+
+$date-picker-input-l-font: 12px;
+
+$date-picker-input-m-font: 12px;
+
+$date-picker-input-m-height: 32px;
+
+$date-picker-input-s-height: 24px;
+
+$date-picker-icon-right: 8px;
+
+$date-picker-icon-color-hover: #73777A;
+
+$date-picker-icon-color: #9B9EA0;
+
+$date-picker-icon-s-font: 16px;
+
+$date-picker-input-l-height: 32px;
+
+$date-picker-icon-l-font: 16px;
+
+
+
+
+// ------------------------ dialog ------------------------ //
+
+$dialog-close-right: 12px;
+
+$dialog-close-top: 16px;
+
+$dialog-close-width: 12px;
+
+$dialog-content-padding-bottom: 16px;
+
+$dialog-content-padding-left-right: 16px;
+
+$dialog-content-padding-top: 16px;
+
+$dialog-footer-padding-bottom: 16px;
+
+$dialog-footer-padding-left-right: 16px;
+
+$dialog-padding: 16px;
+
+$dialog-title-color: #373D41;
+
+$dialog-title-padding-left-right: 16px;
+
+$dialog-title-padding-top: 16px;
+
+$dialog-title-font-size: 14px;
+
+$dialog-content-font-size: 12px;
+
+$dialog-close-color: #9B9EA0;
+
+$dialog-close-size: 12px;
+
+
+
+
+// ------------------------ feedback ------------------------ //
+
+$feedback-prompt-color-border-inline: #00C1DE;
+
+$feedback-error-color-border-inline: #F15532;
+
+$feedback-success-color-border-inline: #35B34A;
+
+$feedback-error-color-border-toast: transparent;
+
+$feedback-error-shadow-toast: 0px 0px 6px 0px rgba(55, 61, 65, 0.32);
+
+$feedback-prompt-color-border-toast: transparent;
+
+$feedback-size-l-border-width: 1px;
+
+$feedback-success-color-border-toast: transparent;
+
+$feedback-prompt-shadow-toast: 0px 0px 6px 0px rgba(55, 61, 65, 0.32);
+
+$feedback-success-shadow-toast: 0px 0px 6px 0px rgba(55, 61, 65, 0.32);
+
+$feedback-size-l-content-font: 12px;
+
+$feedback-size-l-content-margin-top: 4px;
+
+$feedback-size-l-content-padding-right: 16px;
+
+$feedback-size-l-padding-bottom: 12px;
+
+$feedback-size-l-padding-left: 12px;
+
+$feedback-size-l-padding-right: 12px;
+
+$feedback-size-l-padding-top: 12px;
+
+$feedback-size-l-title-font: 12px;
+
+$feedback-size-l-title-padding-right: 12px;
+
+$feedback-error-color-bg-toast: #FFFFFF;
+
+$feedback-error-color-content: #73777A;
+
+$feedback-error-color-icon: #F15532;
+
+$feedback-error-color-title: #373D41;
+
+$feedback-prompt-color-bg-toast: #FFFFFF;
+
+$feedback-prompt-color-content: #73777A;
+
+$feedback-prompt-color-icon: #0BA5BD;
+
+$feedback-prompt-color-title: #373D41;
+
+$feedback-success-color-bg-toast: #FFFFFF;
+
+$feedback-success-color-content: #73777A;
+
+$feedback-success-color-icon: #44CB42;
+
+$feedback-success-color-title: #373D41;
+
+$feedback-size-m-title-font: 12px;
+
+$feedback-size-m-content-margin-top: 4px;
+
+$feedback-size-m-content-padding-right: 16px;
+
+$feedback-size-m-icon: 16px;
+
+$feedback-size-l-content-padding-left: 8px;
+
+$feedback-size-l-icon: 20px;
+
+$feedback-prompt-color-bg-inline: #E6F9FC;
+
+$feedback-size-m-content-font: 12px;
+
+$feedback-size-l-title-padding-left: 8px;
+
+
+
+
+// ------------------------ form ------------------------ //
+
+$form-item-horizontal-split: 16px;
+
+$form-label-horizontal-split: 4px;
+
+$form-label-color: #373D41;
+
+$form-explain-font-size: 12px;
+
+$form-label-m-line-height: 32px;
+
+$form-label-vertical-split-medium: 8px;
+
+$form-label-m-font-size: 12px;
+
+$form-label-s-font-size: 12px;
+
+$form-inset-label-color: #373D41;
+
+$form-label-l-font-size: 14px;
+
+
+
+
+// ------------------------ input ------------------------ //
+
+$input-color-hint: #CACACA;
+
+$input-multiple-color: #373D41;
+
+$input-multiple-corner: 0px;
+
+$input-single-color-border: #D7D8D9;
+
+$input-single-color-border-hover: #C3C5C6;
+
+$input-size-m-font: 12px;
+
+$input-size-m-height: 32px;
+
+$input-size-s-height: 24px;
+
+$input-size-l-font: 12px;
+
+$input-feedback-icon-size-l: 20px;
+
+$input-feedback-icon-size-m: 16px;
+
+$input-multiple-size-padding-tb: 8px;
+
+$input-color-feedback-border-error: #F15532;
+
+$input-multiple-size-padding-lr: 8px;
+
+$input-size-l-height: 40px;
+
+$input-size-l-padding: 12px;
+
+$input-size-m-padding: 8px;
+
+$input-size-s-font: 12px;
+
+$input-single-color-border-focus: #00C1DE;
+
+$input-multiple-font-size: 12px;
+
+$input-single-color: #373D41;
+
+$input-size-s-padding: 8px;
+
+$input-clear-l-icon-size: 16px;
+
+$input-clear-color: #9B9EA0;
+
+$input-clear-hover-color: #9B9EA0;
+
+$input-multiple-color-border-focus: #33CDE5;
+
+$input-clear-m-icon-size: 16px;
+
+$input-color-border-disabled: #D7D8D9;
+
+$input-color-bg-disabled: #F5F5F6;
+
+
+
+
+// ------------------------ menu ------------------------ //
+
+$menu-font-size: 12px;
+
+$menu-border-color: #D7D8D9;
+
+$menu-background-focused: #F5F6FA;
+
+$menu-background-hover: #F5F6FA;
+
+$menu-color: #373D41;
+
+$menu-color-hover: #373D41;
+
+$menu-divider-border-color: #F5F6FA;
+
+$menu-color-focused: #373D41;
+
+$menu-color-selected: #373D41;
+
+$menu-arrow-color: #C3C5C6;
+
+$menu-shadow: none;
+
+
+
+
+// ------------------------ nav ------------------------ //
+
+$nav-line-hoz-height: 36px;
+
+$nav-normal-hoz-height: 36px;
+
+$nav-primary-hoz-height: 44px;
+
+$nav-secondary-hoz-height: 36px;
+
+$nav-text-hoz-height: 36px;
+
+$nav-line-hoz-item-active-color: #00C1DE;
+
+$nav-line-hoz-item-hover-text-color: #00C1DE;
+
+$nav-line-hoz-item-select-text-color: #00C1DE;
+
+$nav-line-hoz-text-color: #00C1DE;
+
+$nav-primary-ver-bg-color: #333745;
+
+$nav-primary-ver-item-hover-bg-color: #42485B;
+
+$nav-primary-ver-item-select-bg-color: #33CDE5;
+
+$nav-primary-hoz-bg-color: #373D41;
+
+$nav-primary-hoz-item-select-bg-color: #272B2F;
+
+$nav-primary-hoz-item-hover-bg-color: transparent;
+
+$nav-primary-hoz-item-hover-text-color: #33CDE5;
+
+$nav-primary-hoz-item-active-color: transparent;
+
+$nav-primary-hoz-item-select-text-color: #33CDE5;
+
+
+
+
+// ------------------------ navigation ------------------------ //
+
+$navigation-text-item-leaf-icon-size: 12px;
+
+
+
+
+// ------------------------ notice ------------------------ //
+
+$notice-border-radius: 0px;
+
+$notice-prompt-color-title: #373D41;
+
+$notice-system-color-bg: #FFF3E6;
+
+$notice-system-color-border: #FF8A00;
+
+$notice-warning-color-border: #F15532;
+
+$notice-warning-color-icon: #F15532;
+
+$notice-prompt-color-border: #00C1DE;
+
+$notice-prompt-color-bg: #E6F9FC;
+
+$notice-prompt-color-bg-addon: transparent;
+
+$notice-prompt-color-icon: #33CDE5;
+
+$notice-size-l-border-width: 1px;
+
+$notice-shadow: none;
+
+$notice-size-m-border-width: 1px;
+
+$notice-warning-color-bg: #FEEEEB;
+
+$notice-size-l-close-right: 16px;
+
+$notice-size-l-close-top: 16px;
+
+$notice-size-l-padding-bottom: 16px;
+
+$notice-size-l-padding-left: 16px;
+
+$notice-size-l-padding-right: 16px;
+
+$notice-size-l-padding-top: 16px;
+
+$notice-size-m-close-right: 8px;
+
+$notice-size-m-close-top: 8px;
+
+$notice-size-m-content-padding-right: 24px;
+
+$notice-size-m-padding-bottom: 8px;
+
+$notice-size-m-padding-left: 8px;
+
+$notice-size-m-padding-right: 8px;
+
+$notice-size-m-padding-top: 8px;
+
+$notice-size-m-close: 8px;
+
+$notice-size-l-title-padding-left: 16px;
+
+$notice-size-l-title-padding-right: 24px;
+
+$notice-color-close: #73777A;
+
+$notice-prompt-color-content: #73777A;
+
+$notice-warning-color-title: #F15532;
+
+$notice-warning-color-content: #F15532;
+
+$notice-system-color-title: #FF8A00;
+
+$notice-system-color-content: #FF8A00;
+
+$notice-system-color-icon: #FF8A00;
+
+$notice-system-color-close: #73777A;
+
+$notice-size-m-title-font: 12px;
+
+$notice-size-m-content-font: 12px;
+
+
+
+
+// ------------------------ number-picker ------------------------ //
+
+$number-picker-inline-handler-height: 32px;
+
+$number-picker-inline-handler-width: 32px;
+
+$number-picker-inline-height: 32px;
+
+$number-picker-color-hover: #73777A;
+
+$number-picker-bg-disabled: #FAFAFC;
+
+$number-picker-color-disabled: #C3C5C6;
+
+$number-picker-font-size: 12px;
+
+$number-picker-handler-icon-size: 12px;
+
+
+
+
+// ------------------------ pagination ------------------------ //
+
+$pagination-item-current-bg: #00C1DE;
+
+$pagination-item-current-border-color: transparent;
+
+$pagination-item-current-color: #FFFFFF;
+
+$pagination-input-width: 40px;
+
+$pagination-input-margin: 28px;
+
+$pagination-current-font-size: 12px;
+
+$pagination-total-font-size: 12px;
+
+$pagination-jump-font-size: 12px;
+
+$pagination-ellipsis-font-size: 12px;
+
+$pagination-jump-color: #373D41;
+
+$pagination-size-selector-title-color: #73777A;
+
+$pagination-total-color: #9B9EA0;
+
+$pagination-ellipsis-color: #373D41;
+
+
+
+
+// ------------------------ progress ------------------------ //
+
+$progress-line-overlay-size-m: 4px;
+
+$progress-line-underlay-size-m: 4px;
+
+$progress-line-underlay-color: #EBECEC;
+
+$progress-circle-underlay-width: 4px;
+
+$progress-circle-overlay-width: 4px;
+
+$progress-circle-underlay-color: #EBECEC;
+
+
+
+
+// ------------------------ radio ------------------------ //
+
+$radio-bg-color: #FFFFFF;
+
+$radio-border-color: #C3C5C6;
+
+$radio-button-border-color: #EBECEC;
+
+$radio-button-font-color: #9B9EA0;
+
+$radio-button-font-size-medium: 12px;
+
+$radio-button-bg-color-checked: #00C1DE;
+
+$radio-button-border-color-checked: transparent;
+
+$radio-button-font-color-checked: #FFFFFF;
+
+$radio-button-height-medium: 32px;
+
+$radio-button-height-small: 24px;
+
+$radio-button-font-size-large: 14px;
+
+$radio-checked-border-color: #00C1DE;
+
+$radio-checked-circle-color: #00C1DE;
+
+$radio-hovered-bg-color: #FFFFFF;
+
+$radio-hovered-border-color: #00C1DE;
+
+$radio-checked-hovered-bg-color: #E6F9FC;
+
+$radio-checked-hovered-border-color: #00C1DE;
+
+$radio-checked-hovered-circle-color: #00C1DE;
+
+$radio-disabled-border-color: #D7D8D9;
+
+$radio-button-bg-color-hovered: #FFFFFF;
+
+$radio-button-border-color-hovered: #9B9EA0;
+
+
+
+
+// ------------------------ range ------------------------ //
+
+$range-normal-selected-color: #00C1DE;
+
+
+
+
+// ------------------------ rating ------------------------ //
+
+$rating-normal-overlay-hover-color: #FF8A00;
+
+$rating-normal-overlay-color: #FF8A00;
+
+$rating-normal-underlay-color: #C3C5C6;
+
+$rating-grade-high-overlay-hover-color: #FF8A00;
+
+$rating-grade-low-overlay-hover-color: #FF8A00;
+
+$rating-grade-high-overlay-color: #FF8A00;
+
+
+
+
+// ------------------------ search ------------------------ //
+
+$search-height-l: 40px;
+
+$search-normal-height-m: 32px;
+
+$search-normal-height-s: 24px;
+
+$search-button-text-size: 14px;
+
+$search-button-icon-l: 16px;
+
+$search-button-icon-m: 16px;
+
+$search-normal-button-text-size: 14px;
+
+$search-normal-button-icon-size-s: 32px;
+
+$search-border-color: #D7D8D9;
+
+$search-border-width: 1px;
+
+$search-height-m: 32px;
+
+$search-normal-hover-border-color: #D7D8D9;
+
+$search-secondary-hover-border-color: #D7D8D9;
+
+$search-button-text-medium-size: 12px;
+
+
+
+
+// ------------------------ select ------------------------ //
+
+$select-color-border: #D7D8D9;
+
+$select-icon-color: #73777A;
+
+$select-middle-font: 12px;
+
+$select-middle-height: 32px;
+
+$select-small-height: 24px;
+
+$select-large-font: 14px;
+
+$select-color-item-bg: #EBEDEF;
+
+$select-icon-large-size: 16px;
+
+$select-icon-middle-size: 12px;
+
+$select-large-padding-lr: 12px;
+
+$select-middle-padding-lr: 8px;
+
+$select-middle-padding-multiple: 8px;
+
+$select-middle-padding-multiple-tb: 4px;
+
+$select-color: #373D41;
+
+$select-color-disabled: #D7D8D9;
+
+$select-color-border-disabled: #D7D8D9;
+
+$select-color-border-active: #33CDE5;
+
+$select-icon-small-size: 8px;
+
+$select-box-bg: #EBEDEF;
+
+$select-item-border-radius: 4px;
+
+$select-color-bg-disabled: #F5F5F6;
+
+
+
+
+// ------------------------ slider ------------------------ //
+
+$slick-arrow-height-l: 80px;
+
+
+
+
+// ------------------------ step ------------------------ //
+
+$step-arrow-item-finish-background: #F5F5F6;
+
+$step-arrow-item-title-finish-color: #C3C5C6;
+
+$step-arrow-item-process-background: #00C1DE;
+
+$step-circle-item-node-finish-border-color: #00C1DE;
+
+$step-circle-item-node-process-background: #00C1DE;
+
+$step-circle-item-node-process-border-color: transparent;
+
+$step-circle-item-tail-finish-color: #D7D8D9;
+
+$step-circle-item-title-process-color: #73777A;
+
+$step-dot-item-node-finish-border-color: transparent;
+
+$step-dot-item-node-process-background: #00C1DE;
+
+$step-dot-item-node-process-border-color: transparent;
+
+$step-circle-item-node-finish-color: #00C1DE;
+
+$step-circle-item-title-finish-color: #73777A;
+
+$step-dot-item-node-process-color: #C3C5C6;
+
+$step-dot-item-title-wait-color: #73777A;
+
+$step-dot-item-tail-finish-color: #C3C5C6;
+
+$step-dot-item-tail-process-color: #C3C5C6;
+
+$step-dot-item-tail-wait-color: #EBECEC;
+
+$step-circle-item-title-size: 12px;
+
+$step-circle-item-title-wait-color: #73777A;
+
+$step-circle-item-tail-wait-color: #EBECEC;
+
+$step-circle-item-tail-process-color: #EBECEC;
+
+$step-circle-item-node-wait-color: #73777A;
+
+$step-dot-item-title-finish-color: #73777A;
+
+$step-dot-item-node-wait-border-color: transparent;
+
+$step-dot-item-node-wait-background: #D3D5D5;
+
+$step-dot-item-node-wait-color: #73777A;
+
+$step-dot-item-node-finish-background: #D3D5D5;
+
+
+
+
+// ------------------------ switch ------------------------ //
+
+$switch-size-m-trigger: 20px;
+
+$switch-size-m-width: 40px;
+
+$switch-size-m-radius-container: 16px;
+
+$switch-size-m-radius-trigger: 16px;
+
+$switch-size-s-radius-container: 4px;
+
+$switch-size-s-radius-trigger: 0px;
+
+$switch-size-s-width: 40px;
+
+$switch-normal-on-bg-color: #44CB42;
+
+$switch-hover-on-bg-color: #44CB42;
+
+
+
+
+// ------------------------ tab ------------------------ //
+
+$tab-strip-ink-bar-color: #00C1DE;
+
+$tab-strip-nav-item-border-width-active: 1px;
+
+$tab-wrapped-ink-bar-color: #00C1DE;
+
+$tab-strip-ink-bar-width: 2px;
+
+$tab-wrapped-ink-bar-width: 2px;
+
+$tab-bar-height-size-m: 32px;
+
+$tab-bar-height-size-s: 32px;
+
+$tab-bar-text-size-m: 12px;
+
+$tab-bar-text-size-s: 12px;
+
+$tab-content-min-height: 16px;
+
+$tab-content-padding-m: 8px;
+
+$tab-content-padding-s: 12px;
+
+$tab-bar-padding-size-m: 16px;
+
+$tab-bar-padding-size-s: 16px;
+
+$tab-capsule-corner-radius: 0px;
+
+$tab-strip-text-color-selected: #00C1DE;
+
+$tab-strip-content-text-color: #373D41;
+
+$tab-strip-content-text-color-hover: #0BA5BD;
+
+$tab-strip-text-color-hover: #00C1DE;
+
+$tab-strip-text-color-normal: #9B9EA0;
+
+$tab-capsule-bg-color-selected: #33CDE5;
+
+$tab-capsule-content-text-color: #373D41;
+
+$tab-capsule-tab-border-line-color-active: transparent;
+
+$tab-capsule-bg-color-disabled: transparent;
+
+$tab-capsule-tab-border-line-color: #D7D8D9;
+
+$tab-capsule-tab-border-line-color-hover: #D7D8D9;
+
+$tab-capsule-text-color: #73777A;
+
+$tab-wrapped-bg-color: transparent;
+
+$tab-wrapped-bg-color-disabled: transparent;
+
+$tab-wrapped-bg-color-hover: transparent;
+
+$tab-wrapped-border-line-color-hover: #EBECEC;
+
+$tab-wrapped-content-text-color: #373D41;
+
+$tab-wrapped-text-color: #73777A;
+
+$tab-wrapped-text-color-hover: #00C1DE;
+
+$tab-wrapped-text-color-selected: #00C1DE;
+
+$tab-bar-control-icon-size-m: 8px;
+
+$tab-text-content-text-color: #373D41;
+
+$tab-wrapped-tab-margin-right: 0;
+
+$tab-wrapped-tab-margin-bottom: 0;
+
+$tab-wrapped-content-text-color-hover: #373D41;
+
+$tab-capsule-text-color-selected: #FFFFFF;
+
+$tab-capsule-content-bg-color: #FFFFFF;
+
+
+
+
+// ------------------------ table ------------------------ //
+
+$table-th-bg: #F5F6FA;
+
+$table-normal-border-color: #EBECEC;
+
+$table-cell-padding-top: 12px;
+
+$table-group-th-bg: #FAFAFC;
+
+$table-th-color: #73777A;
+
+$table-sort-color: #373D41;
+
+$table-th-font-size: 12px;
+
+$table-body-font-size: 12px;
+
+$table-row-hover-bg: #F5F6FA;
+
+
+
+
+// ------------------------ tag ------------------------ //
+
+$tag-selectable-primary-background-color-selected-hover: #00B7D3;
+
+$tag-selectable-primary-border-color-selected-hover: transparent;
+
+$tag-size-m-height: 32px;
+
+$tag-size-s-height: 24px;
+
+$tag-selectable-normal-border-color-selected: #00C1DE;
+
+$tag-selectable-normal-border-color-selected-hover: #00B7D3;
+
+$tag-selectable-normal-tail-bg-color: #00C1DE;
+
+$tag-selectable-normal-text-color-selected: #373D41;
+
+$tag-selectable-normal-text-color-selected-hover: #0BA5BD;
+
+$tag-selectable-secondary-border-color-selected: #00C1DE;
+
+$tag-selectable-secondary-border-color-selected-hover: #0BA5BD;
+
+$tag-selectable-secondary-tail-bg-color: #00C1DE;
+
+$tag-selectable-secondary-text-color-selected-hover: #0BA5BD;
+
+$tag-selectable-normal-border-color: #D7D8D9;
+
+$tag-selectable-normal-tail-bg-color-selected-hover: #00B7D3;
+
+$tag-selectable-secondary-tail-bg-color-selected-hover: #0BA5BD;
+
+$tag-selectable-primary-background-color-selected: #00B7D3;
+
+$tag-selectable-primary-border-color: #D7D8D9;
+
+$tag-selectable-primary-border-color-hover: #C3C5C6;
+
+$tag-selectable-primary-border-color-selected: #00C1DE;
+
+$tag-selectable-normal-background-color-hover: #F5F7F9;
+
+$tag-selectable-secondary-text-color-selected: #00C1DE;
+
+$tag-interactive-r-background-color-hover: #00C1DE;
+
+$tag-interactive-number-color-hover: #00C1DE;
+
+$tag-link-primary-border-color-hover: #F5F6FA;
+
+$tag-link-primary-text-color: #373D41;
+
+$tag-link-primary-text-color-hover: #FFFFFF;
+
+$tag-link-primary-background-color-hover: #74808F;
+
+$tag-link-primary-background-color: #EBEDEF;
+
+$tag-selectable-normal-text-color-hover: #373D41;
+
+$tag-selectable-secondary-text-color: #373D41;
+
+$tag-selectable-secondary-text-color-hover: #373D41;
+
+$tag-selectable-primary-text-color: #373D41;
+
+$tag-selectable-primary-text-color-hover: #373D41;
+
+$tag-deletable-normal-text-color: #373D41;
+
+$tag-deletable-normal-text-color-hover: #373D41;
+
+$tag-deletable-primary-text-color: #373D41;
+
+$tag-deletable-primary-text-color-hover: #373D41;
+
+$tag-deletable-secondary-text-color: #373D41;
+
+$tag-deletable-secondary-text-color-hover: #373D41;
+
+$tag-interactive-l-text-color: #373D41;
+
+$tag-interactive-l-text-color-hover: #373D41;
+
+$tag-link-normal-text-color: #373D41;
+
+$tag-link-normal-text-color-hover: #373D41;
+
+$tag-size-m-padding-lr: 8px;
+
+$tag-size-s-padding-lr: 8px;
+
+$tag-selectable-normal-text-color: #373D41;
+
+$tag-link-secondary-text-color: #373D41;
+
+$tag-link-secondary-text-color-hover: #373D41;
+
+$tag-readonly-text-color: #373D41;
+
+$tag-readonly-border-color: #D7D8D9;
+
+$tag-corner-radius: 4px;
+
+$tag-deletable-split-line-width: 0px;
+
+$tag-deletable-tail-width: 24px;
+
+$tag-deletable-normal-border-color: transparent;
+
+$tag-deletable-primary-border-color: transparent;
+
+$tag-deletable-primary-border-color-hover: transparent;
+
+$tag-deletable-split-line-color: transparent;
+
+$tag-deletable-normal-icon-color: #73777A;
+
+$tag-deletable-normal-icon-background-color: #EBEDEF;
+
+$tag-deletable-normal-icon-color-hover: #373D41;
+
+$tag-deletable-normal-icon-background-color-hover: #D7D8D9;
+
+$tag-deletable-primary-icon-color: #73777A;
+
+$tag-deletable-primary-icon-background-color: #EBEDEF;
+
+$tag-deletable-primary-icon-color-hover: #373D41;
+
+$tag-deletable-primary-icon-background-color-hover: #D7D8D9;
+
+$tag-deletable-normal-background-color: #EBEDEF;
+
+$tag-deletable-normal-background-color-hover: #D7D8D9;
+
+$tag-deletable-primary-background-color: #EBEDEF;
+
+$tag-deletable-primary-background-color-hover: #D7D8D9;
+
+
+
+
+// ------------------------ time-picker ------------------------ //
+
+$time-picker-cell-hover-bg: #F5F7F9;
+
+$time-picker-icon-color: #9B9EA0;
+
+$time-picker-cell-selected-bg: #F5F7F9;
+
+$time-picker-icon-color-hover: #73777A;
+
+$time-picker-input-m-height: 32px;
+
+$time-picker-input-s-height: 24px;
+
+$time-picker-cell-selected-color: #373D41;
+
+
+
+
+// ------------------------ timeline ------------------------ //
+
+$timeline-item-body-color: #9B9EA0;
+
+$timeline-item-tail-color: #D7D8D9;
+
+$timeline-item-time-color: #C3C5C6;
+
+$timeline-item-folder-color: #00C1DE;
+
+$timeline-item-process-background: #00C1DE;
+
+$timeline-item-error-background: #00C1DE;
+
+$timeline-item-title-font-size: 14px;
+
+
+
+
+// ------------------------ tree ------------------------ //
+
+$tree-node-hover-background-rgb: #73777A;
+
+$tree-switch-hover-arrow-color: #373D41;
+
+$tree-switch-hover-bg-color: #F5F7F9;
+
+$tree-node-selected-background-opacity: 0.66;
+
+$tree-node-selected-background-rgb: transparent;
+
+$tree-switch-arrow-size: 12px;
+
+$tree-node-title-font-size: 12px;
+
+$tree-switch-margint-right: 4px;
+
+$tree-node-normal-color: #373D41;
+
+$tree-node-hover-color: #373D41;
+
+$tree-node-selected-color: #373D41;
+
+$tree-switch-arrow-color: #9B9EA0;
+
+
+
+
+// ------------------------ upload ------------------------ //
+
+$upload-list-text-bg-color: #FAFAFC;
+
+$upload-list-text-bg-color-hover: #FAFAFC;
+
+$upload-card-margin-right: 0;
+
+$upload-list-item-name-margin-top: 0;
+
+$upload-list-text-name-font-color-hover: #0BA5BD;
+
+$upload-select-card-border-color-hover: #00C1DE;
+
+$upload-list-text-close-icon-size: 8px;
+
+
+
+
+// ------------------------ custom icons ------------------------ //
+
+
+$icon-content-yituguanli: '\e835';
+
+$icon-content-zidingyi: '\e834';
+
+$icon-content-fabu: '\e833';
+
+$icon-content-guanbi: '\e832';
+
+$icon-content-tianshenpi: '\e829';
+
+$icon-content-yishouquan: '\e831';
+
+$icon-content-quanxianshenpi: '\e830';
+
+$icon-content-guanfang: '\eb69';
+
+$icon-content-guanlian: '\eb68';
+
+$icon-content-jinggao: '\e828';
+
+$icon-content-ceshishenqing: '\e826';
+
+$icon-content-tianxie: '\e827';
+
+$icon-content-peiwangyindao: '\e825';
+
+$icon-content-fenxiangfangshi: '\e824';
+
+$icon-content-SDKjicheng: '\e823';
+
+$icon-content-yunyingzhongxin: '\e822';
+
+$icon-content-tiaoshi: '\e821';
+
+$icon-content-gaojing: '\e805';
+
+$icon-content-jizhanguanli: '\e810';
+
+$icon-content-yibiaopan: '\e814';
+
+$icon-content-zhunbeiliangchan: '\e820';
+
+$icon-content-yingyongguanli: '\e816';
+
+$icon-content-zhanghaoquanxian: '\e815';
+
+$icon-content-shebeikaifa: '\e812';
+
+$icon-content-renjijiaohu: '\e818';
+
+$icon-content-shiyongwendang: '\e811';
+
+$icon-content-huobanmiyueguanli: '\e808';
+
+$icon-content-jiedianguanli: '\e809';
+
+$icon-content-jishufuwu: '\e813';
+
+$icon-content-fenzuguanli: '\e807';
+
+$icon-content-shebeiguanli: '\e806';
+
+$icon-content-changjingguanli: '\e804';
+
+$icon-content-gongnengdingyi: '\e819';
+
+$icon-content-bianjishezhi: '\e817';
+
+$icon-content-yuanquyunwei: '\e803';
+
+$icon-content-shujukanban: '\e802';
+
+$icon-content-jichuguanli: '\e801';
+
+$icon-content-yunyingguanli: '\e800';
+
+$icon-content-queding: '\e6fc';
+
+$icon-content-zuojiantou1: '\e6fb';
+
+$icon-content-youjiantou1: '\e6fa';
+
+$icon-content-youjiantou: '\e6f9';
+
+$icon-content-jianhao1: '\e6f8';
+
+$icon-content-jiahao2: '\e6f7';
+
+$icon-content-jiahao1: '\e6f6';
+
+$icon-content-zuojiantou: '\e6f5';
+
+$icon-content-jianhao: '\e6f4';
+
+$icon-content-ziji: '\e6f3';
+
+$icon-content-queding1: '\e6f2';
+
+$icon-content-kuozhanjiantou: '\e6f1';
+
+$icon-content-cuowu1: '\e6f0';
+
+$icon-content-shangjiantou: '\e6ef';
+
+$icon-content-tanhao2: '\e6ee';
+
+$icon-content-tanhao1: '\e6ed';
+
+$icon-content-xiala: '\e6ec';
+
+$icon-content-paixu: '\e6eb';
+
+$icon-content-shaixuan: '\e6ea';
+
+$icon-content-gengduo: '\e6e9';
+
+$icon-content-jiahao: '\e6e8';
+
+$icon-content-xiaoxi: '\e6e7';
+
+$icon-content-wenhao: '\e6e6';
+
+$icon-content-bianji: '\e6e5';
+
+$icon-content-zuzhi: '\e6e4';
+
+$icon-content-neirong: '\e6e3';
+
+$icon-content-rili: '\e6e2';
+
+$icon-content-tanhao: '\e6e1';
+
+$icon-content-shanchu: '\e6e0';
+
+$icon-content-sousuo: '\e6df';
+
+$icon-content-zhedie: '\e6de';
+
+$icon-content-bushu: '\e6dd';
+
+$icon-content-fanhui: '\e6dc';
+
+$icon-content-shezhi: '\e6db';
+
+$icon-content-baocun: '\e6da';
+
+$icon-content-tuichu: '\e6d8';
+
+$icon-content-shujuguanli: '\e6d7';
+
+$icon-content-web: '\e6d6';
+
+$icon-content-shujujieru: '\e6d5';
+
+$icon-content-app: '\e6d4';
+
+$icon-content-fuwu: '\e6d3';
+
+$icon-content-yulan2: '\e6d2';
+
+$icon-content-yulan: '\e6d1';
+
+$icon-content-wendang1: '\e6c7';
+
+$icon-content-cuowu: '\e6c2';
+
+$icon-content-aliyun: '\e636';
+
+$icon-content-shujukubiao: '\e770';
+
+$icon-content-fuzhi: '\e635';
+
+$icon-content-zuolianjie: '\e6d0';
+
+$icon-content-zhuyi: '\e6cf';
+
+$icon-content-yiwen: '\e6ce';
+
+$icon-content-wancheng1: '\e6cd';
+
+$icon-content-tishi: '\e6cc';
+
+$icon-content-neilianjie: '\e6c9';
+
+$icon-content-wancheng: '\e6c8';
+
+$icon-content-huodong: '\e6b6';
+
+$icon-content-back1: '\e6c3';
+
+$icon-content-reset: '\e702';
+
+$icon-content-icon-bang: '\e6c6';
+
+$icon-content-rotate1: '\e6bb';
+
+$icon-content-shangchuanxiazaijilu: '\e6c5';
+
+$icon-content-xiangshangjiantou: '\e638';
+
+$icon-content-xiangxiajiantou: '\e637';
+
+$icon-content-back_android: '\e7ed';
+
+$icon-content-fanhuishangji: '\e6b8';
+
+$icon-content-rotate4: '\e842';
+
+$icon-content-favorites: '\e6a1';
+
+$icon-content-point: '\e624';
+
+$icon-content-arrowleft-copy: '\e616';
+
+$icon-content-arrow-right1: '\e6a0';
+
+$icon-content-search1: '\e69f';
+
+$icon-content-nav-more: '\e69e';
+
+$icon-content-exit: '\e7cb';
+
+$icon-content-windows: '\e6a5';
+
+$icon-content-arrowright: '\e615';
+
+$icon-content-arrowleft: '\e614';
+
+$icon-content-arrow: '\e613';
+
+$icon-content-newshot: '\e7c5';
+
+$icon-content-pingguo: '\e6a4';
+
+$icon-content-rizhi: '\e60a';
+
+$icon-content-beian: '\e609';
+
+$icon-content-shangchuan: '\e6a6';
+
+$icon-content-error-filling: '\e684';
+
+$icon-content-back: '\e67f';
+
+$icon-content-file: '\e62f';
+
+$icon-content-right: '\e626';
+
+$icon-content-peizhi: '\e62e';
+
+$icon-content-add1: '\e767';
+
+$icon-content-backdelete: '\e756';
+
+$icon-content-all1: '\e755';
+
+$icon-content-rank: '\e722';
+
+$icon-content-xiajiantou: '\e625';
+
+$icon-content-quxiao: '\e71a';
+
+$icon-content-service1: '\e6ff';
+
+$icon-content-search2: '\e6c1';
+
+$icon-content-roundadd: '\e6d9';
+
+$icon-content-form1: '\e6c4';
+
+$icon-content-settings: '\e6b2';
+
+$icon-content-comment: '\e6b3';
+
+$icon-content-rotate2: '\e7dd';
+
+
+
+// ----------- 品牌色 patch ----------- //
+
+$color-b1-1: $color-brand1-1 !default;
+$color-b1-2: $color-brand1-2 !default;
+$color-b1-3: $color-brand1-3 !default;
+$color-b1-4: $color-brand1-4 !default;
+$color-b1-5: $color-brand1-5 !default;
+$color-b1-6: $color-brand1-6 !default;
+$color-b1-7: $color-brand1-7 !default;
+$color-b1-8: $color-brand1-8 !default;
+$color-b1-9: $color-brand1-9 !default;
+$color-b1-10: $color-brand1-10 !default;
+
+$color-b2-1: $color-brand2-1 !default;
+$color-b2-2: $color-brand2-2 !default;
+$color-b2-3: $color-brand2-3 !default;
+$color-b2-6: $color-brand2-6 !default;
+$color-b7-6: $color-brand7-6 !default;
+$color-b7-9: $color-brand7-9 !default;
+
+$color-b2-4: #7ABEE8 !default;
+$color-b2-5: #4DA8E1 !default;
+$color-b2-7: #1587D1 !default;
+$color-b2-8: #0A7EC9 !default;
+$color-b2-9: #0073BD !default;
+$color-b2-10: #006AB0 !default;
+
+$color-b3-1: #FFE2DB !default;
+$color-b3-2: #FFC8BF !default;
+$color-b3-3: #F7A394 !default;
+$color-b3-4: #ED8472 !default;
+$color-b3-5: #E3715D !default;
+$color-b3-6: #D9624E !default;
+$color-b3-7: #D15241 !default;
+$color-b3-8: #C43F31 !default;
+$color-b3-9: #BD3224 !default;
+$color-b3-10: #B32018 !default;
+
+$color-b4-1: #E7F5E5 !default;
+$color-b4-2: #CDEBC8 !default;
+$color-b4-3: #B0DEA9 !default;
+$color-b4-4: #92CC86 !default;
+$color-b4-5: #70B564 !default;
+$color-b4-6: #55A344 !default;
+$color-b4-7: #479635 !default;
+$color-b4-8: #3B8F28 !default;
+$color-b4-9: #358723 !default;
+$color-b4-10: #257D12 !default;
+
+$color-b5-1: #FEF7DA !default;
+$color-b5-2: #FFF2C2 !default;
+$color-b5-3: #FDE89D !default;
+$color-b5-4: #FFE27D !default;
+$color-b5-5: #FBD653 !default;
+$color-b5-6: #FACE32 !default;
+$color-b5-7: #F7BF25 !default;
+$color-b5-8: #F2B211 !default;
+$color-b5-9: #EDA807 !default;
+$color-b5-10: #E89A00 !default;
+
+$color-b6-1: #E9E6FA !default;
+$color-b6-2: #D5CFF7 !default;
+$color-b6-3: #B8AFED !default;
+$color-b6-4: #9F94E8 !default;
+$color-b6-5: #887BE3 !default;
+$color-b6-6: #6D5CDB !default;
+$color-b6-7: #5F4DD1 !default;
+$color-b6-8: #5240C7 !default;
+$color-b6-9: #4634BF !default;
+$color-b6-10: #3A27B5 !default;
+
+$color-b7-1: #E3EAF7 !default;
+$color-b7-2: #CCD9F0 !default;
+$color-b7-3: #AABEE0 !default;
+$color-b7-4: #84A1D1 !default;
+$color-b7-5: #6D8CC2 !default;
+$color-b7-7: #4369AB !default;
+$color-b7-8: #375EA3 !default;
+$color-b7-10: #224B94 !default;
+
+$color-b8-1: #FFEBEE !default;
+$color-b8-2: #FFD9E0 !default;
+$color-b8-3: #FFC2CE !default;
+$color-b8-4: #FFA3B6 !default;
+$color-b8-5: #FF89A1 !default;
+$color-b8-6: #F96985 !default;
+$color-b8-7: #F54E70 !default;
+$color-b8-8: #ED395D !default;
+$color-b8-9: #DE284C !default;
+$color-b8-10: #D1173F !default;
+
+
+// ----------- 功能色 patch ----------- //
+
+$color-f1-1: $color-warning-2 !default;
+$color-f1-2: $color-warning-1 !default;
+$color-f1-3: $color-warning-3 !default;
+
+$color-f2-1: $color-error-2 !default;
+$color-f2-2: $color-error-1 !default;
+$color-f2-3: $color-error-3 !default;
+
+$color-f3-1: $color-success-2 !default;
+$color-f3-2: $color-success-1 !default;
+$color-f3-3: $color-success-3 !default;
+
+$color-f4-1: $color-link-1 !default;
+$color-f4-2: $color-link-3 !default;
+$color-f4-3: $color-link-2 !default;
+
+$color-f5-1: $color-notice-2 !default;
+$color-f5-2: $color-notice-1 !default;
+$color-f5-3: $color-notice-3 !default;
+
+$color-f6-1: $color-other-2 !default;
+$color-f6-2: $color-other-1 !default;
+$color-f6-3: $color-other-3 !default;
+
+$color-f1-4: transparent !default;
+$color-f1-5: transparent !default;
+$color-f1-6: transparent !default;
+$color-f1-7: transparent !default;
+$color-f1-8: transparent !default;
+$color-f1-9: transparent !default;
+$color-f1-10: transparent !default;
+
+$color-f2-4: transparent !default;
+$color-f2-5: transparent !default;
+$color-f2-6: transparent !default;
+$color-f2-7: transparent !default;
+$color-f2-8: transparent !default;
+$color-f2-9: transparent !default;
+$color-f2-10: transparent !default;
+
+$color-f3-4: transparent !default;
+$color-f3-5: transparent !default;
+$color-f3-6: transparent !default;
+$color-f3-7: transparent !default;
+$color-f3-8: transparent !default;
+$color-f3-9: transparent !default;
+$color-f3-10: transparent !default;
+
+$color-f4-4: transparent !default;
+$color-f4-5: transparent !default;
+$color-f4-6: transparent !default;
+$color-f4-7: transparent !default;
+$color-f4-8: transparent !default;
+$color-f4-9: transparent !default;
+$color-f4-10: transparent !default;
+
+$color-f5-4: transparent !default;
+$color-f5-5: transparent !default;
+$color-f5-6: transparent !default;
+$color-f5-7: transparent !default;
+$color-f5-8: transparent !default;
+$color-f5-9: transparent !default;
+$color-f5-10: transparent !default;
+
+$color-f6-1: transparent !default;
+$color-f6-2: transparent !default;
+$color-f6-3: transparent !default;
+$color-f6-4: transparent !default;
+$color-f6-5: transparent !default;
+$color-f6-6: transparent !default;
+$color-f6-7: transparent !default;
+$color-f6-8: transparent !default;
+$color-f6-9: transparent !default;
+$color-f6-10: transparent !default;
+
+// ----------- 中立色 patch ----------- //
+
+$color-n1-1: $color-white !default;
+$color-n1-2: $color-fill1-1 !default;
+$color-n1-3: $color-fill1-2 !default;
+$color-n1-4: $color-fill1-3 !default;
+$color-n1-5: $color-line1-1 !default;
+$color-n1-6: $color-line1-2 !default;
+$color-n1-7: $color-line1-3 !default;
+$color-n1-8: $color-line1-4 !default;
+$color-n1-9: $color-black !default;
+$color-n1-10: $color-fill1-4 !default;
+
+$color-n2-1: $color-text1-1 !default;
+$color-n2-2: $color-text1-2 !default;
+$color-n2-3: $color-text1-3 !default;
+$color-n2-4: $color-text1-4 !default;
+$color-n2-5: $color-text1-5 !default;
+
+$color-n2-6: transparent !default;
+$color-n2-7: transparent !default;
+$color-n2-8: transparent !default;
+$color-n2-9: transparent !default;
+$color-n2-10: transparent !default;
+
+// ----------- 边角 patch ----------- //
+
+$corner-circle: 50% !default;
+$corner-radius-base: 3px;
+$corner-radius-r0: $corner-0 !default;
+$corner-radius-r1: $corner-1 !default;
+$corner-radius-r2: $corner-2 !default;
+$corner-radius-r3: $corner-3 !default;
+$corner-radius-r4: $corner-4 !default;
+$corner-radius-r5: $corner-5 !default;
+$corner-radius-circle: $corner-circle !default;
+
+// ----------- 字体 unconfig ----------- //
+
+$font-weight-thin: 200 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bolder: bolder !default;
+
+// ----------- 字体 patch ----------- //
+
+$font-weight-core-light: $font-weight-1 !default;
+$font-weight-core-thin: $font-weight-thin !default;
+$font-weight-core-regular: $font-weight-2 !default;
+$font-weight-core-medium: $font-weight-medium !default;
+$font-weight-core-bold: $font-weight-3 !default;
+$font-weight-core-bolder: $font-weight-bolder !default;
+$font-weight-base-display3: $font-weight-core-regular !default;
+$font-weight-base-display2: $font-weight-core-regular !default;
+$font-weight-base-display1: $font-weight-core-regular !default;
+$font-weight-base-headline: $font-weight-core-medium !default;
+$font-weight-base-title: $font-weight-core-medium !default;
+$font-weight-base-subhead: $font-weight-core-regular !default;
+$font-weight-base-body2: $font-weight-core-medium !default;
+$font-weight-base-body1: $font-weight-core-regular !default;
+$font-weight-base-caption: $font-weight-core-regular !default;
+
+$font-size-base-display3: $font-size-display-3 !default;
+$font-size-base-display2: $font-size-display-2 !default;
+$font-size-base-display1: $font-size-display-1 !default;
+$font-size-base-headline: $font-size-headline !default;
+$font-size-base-title: $font-size-title !default;
+$font-size-base-subhead: $font-size-subhead !default;
+$font-size-base-body2: $font-size-body-2 !default;
+$font-size-base-body1: $font-size-body-1 !default;
+$font-size-base-caption: $font-size-caption !default;
+
+$font-lineheight-base-display3: 84px !default;
+$font-lineheight-base-display2: 68px !default;
+$font-lineheight-base-display1: 54px !default;
+$font-lineheight-base-headline: 36px !default;
+$font-lineheight-base-title: 30px !default;
+$font-lineheight-base-subhead: 24px !default;
+$font-lineheight-base-body2: 20px !default;
+$font-lineheight-base-body1: 20px !default;
+$font-lineheight-base-caption: 18px !default;
+
+// ----------- 以下变量后期将弃用, 请勿使用 ----------- //
+
+$font-size-en-display3: 56px !default;
+$font-size-en-display2: 48px !default;
+$font-size-en-display1: 36px !default;
+$font-size-en-headline: 24px !default;
+$font-size-en-title: 20px !default;
+$font-size-en-subhead: 16px !default;
+$font-size-en-body2: 14px !default;
+$font-size-en-body1: 14px !default;
+$font-size-en-caption: 12px !default;
+
+$font-lineheight-en-display3: 84px !default;
+$font-lineheight-en-display2: 68px !default;
+$font-lineheight-en-display1: 54px !default;
+$font-lineheight-en-headline: 36px !default;
+$font-lineheight-en-title: 30px !default;
+$font-lineheight-en-subhead: 24px !default;
+$font-lineheight-en-body2: 20px !default;
+$font-lineheight-en-body1: 20px !default;
+$font-lineheight-en-caption: 18px !default;
+
+$font-weight-en-display3: $font-weight-core-regular !default;
+$font-weight-en-display2: $font-weight-core-regular !default;
+$font-weight-en-display1: $font-weight-core-regular !default;
+$font-weight-en-headline: $font-weight-core-medium !default;
+$font-weight-en-title: $font-weight-core-medium !default;
+$font-weight-en-subhead: $font-weight-core-regular !default;
+$font-weight-en-body2: $font-weight-core-medium !default;
+$font-weight-en-body1: $font-weight-core-regular !default;
+$font-weight-en-caption: $font-weight-core-regular !default;
+
+$font-size-zh-display3: 56px !default;
+$font-size-zh-display2: 48px !default;
+$font-size-zh-display1: 36px !default;
+$font-size-zh-headline: 24px !default;
+$font-size-zh-title: 20px !default;
+$font-size-zh-subhead: 16px !default;
+$font-size-zh-body2: 14px !default;
+$font-size-zh-body1: 14px !default;
+$font-size-zh-caption: 12px !default;
+
+$font-lineheight-zh-display3: 84px !default;
+$font-lineheight-zh-display2: 68px !default;
+$font-lineheight-zh-display1: 54px !default;
+$font-lineheight-zh-headline: 36px !default;
+$font-lineheight-zh-title: 30px !default;
+$font-lineheight-zh-subhead: 24px !default;
+$font-lineheight-zh-body2: 25px !default;
+$font-lineheight-zh-body1: 25px !default;
+$font-lineheight-zh-caption: 18px !default;
+
+$font-weight-zh-display3: $font-weight-core-regular !default;
+$font-weight-zh-display2: $font-weight-core-regular !default;
+$font-weight-zh-display1: $font-weight-core-regular !default;
+$font-weight-zh-headline: $font-weight-core-bold !default;
+$font-weight-zh-title: $font-weight-core-bold !default;
+$font-weight-zh-subhead: $font-weight-core-regular !default;
+$font-weight-zh-body2: $font-weight-core-bold !default;
+$font-weight-zh-body1: $font-weight-core-regular !default;
+$font-weight-zh-caption: $font-weight-core-regular !default;
+
+// ----------- 线条 unconfig ----------- //
+
+$line-solid: solid !default;
+$line-dashed: dashed !default;
+$line-dotted: dotted !default;
+
+// ----------- 线条 patch ----------- //
+
+$line-1-width: $line-1 !default;
+$line-2-width: $line-2 !default;
+$line-3-width: $line-3 !default;
+
+// ----------- 以下变量后期将弃用, 请勿使用 ----------- //
+
+$line1: $line-1-width $line-solid;
+$line1-dashed: $line-1-width $line-dashed;
+$line1-dotted: $line-1-width $line-dotted;
+
+$line2: $line-2-width $line-solid;
+$line2-dashed: $line-2-width $line-dashed;
+$line2-dotted: $line-2-width $line-dotted;
+
+$line3: $line-3-width $line-solid;
+$line3-dashed: $line-3-width $line-dashed;
+$line3-dotted: $line-3-width $line-dotted;
+
+// ----------- 阴影 patch ----------- //
+
+// lessUnsupport
+@function shadow-maker(
+    $direction: $shadow-sides-base,
+    $blur: $shadow-blur-sd1,
+    $shadow-color: $shadow-color-opacity-sd1,
+    $shadow-x: $shadow-distance-sd1,
+    $shadow-y: $shadow-distance-sd1,
+    $shadow-spread: $shadow-spread-sd1
+
+) {
+
+    $x: $shadow-x;
+    $y: $shadow-y;
+    $b: $blur;
+    $c: $shadow-color;
+    $s: $shadow-spread;
+
+    @if ($b == 0) {
+        @return 0 0 0 #FFFFFF;
+    }
+
+    @if ($direction == $shadow-sides-up) {
+        $x: 0;
+        $y: -$shadow-y;
+    } @else if ($direction == $shadow-sides-right) {
+        $y: 0;
+    } @else if ($direction == $shadow-sides-down) {
+        $x: 0;
+    } @else if ($direction == $shadow-sides-left) {
+        $x: -$shadow-x;
+        $y: 0;
+    }
+
+    @return #{$x}px #{$y}px #{$b}px #{$s}px $c;
+}
+
+$shadow-color-opacity-sd1: rgba($shadow-color-sd1, $shadow-opacity-sd1) !default;
+$shadow-color-opacity-sd2: rgba($shadow-color-sd2, $shadow-opacity-sd2) !default;
+$shadow-color-opacity-sd3: rgba($shadow-color-sd3, $shadow-opacity-sd3) !default;
+$shadow-color-opacity-sd4: rgba($shadow-color-sd4, $shadow-opacity-sd4) !default;
+$shadow-color-opacity-sd5: rgba($shadow-color-sd5, $shadow-opacity-sd5) !default;
+
+$shadow-0: none;
+$shadow-1: shadow-maker($shadow-sides-base, $shadow-blur-sd1, $shadow-color-opacity-sd1, $shadow-distance-sd1, $shadow-distance-sd1, $shadow-spread-sd1);
+$shadow-1-up: shadow-maker($shadow-sides-up, $shadow-blur-sd1, $shadow-color-opacity-sd1, $shadow-distance-sd1, $shadow-distance-sd1, $shadow-spread-sd1);
+$shadow-1-right: shadow-maker($shadow-sides-right, $shadow-blur-sd1, $shadow-color-opacity-sd1, $shadow-distance-sd1, $shadow-distance-sd1, $shadow-spread-sd1);
+$shadow-1-down: shadow-maker($shadow-sides-down, $shadow-blur-sd1, $shadow-color-opacity-sd1, $shadow-distance-sd1, $shadow-distance-sd1, $shadow-spread-sd1);
+$shadow-1-left: shadow-maker($shadow-sides-left, $shadow-blur-sd1, $shadow-color-opacity-sd1, $shadow-distance-sd1, $shadow-distance-sd1, $shadow-spread-sd1);
+$shadow-2: shadow-maker($shadow-sides-base, $shadow-blur-sd2, $shadow-color-opacity-sd2, $shadow-distance-sd2, $shadow-distance-sd2, $shadow-spread-sd2);
+$shadow-2-up: shadow-maker($shadow-sides-up, $shadow-blur-sd2, $shadow-color-opacity-sd2, $shadow-distance-sd2, $shadow-distance-sd2, $shadow-spread-sd2);
+$shadow-2-right: shadow-maker($shadow-sides-right, $shadow-blur-sd2, $shadow-color-opacity-sd2, $shadow-distance-sd2, $shadow-distance-sd2, $shadow-spread-sd2);
+$shadow-2-down: shadow-maker($shadow-sides-down, $shadow-blur-sd2, $shadow-color-opacity-sd2, $shadow-distance-sd2, $shadow-distance-sd2, $shadow-spread-sd2);
+$shadow-2-left: shadow-maker($shadow-sides-left, $shadow-blur-sd2, $shadow-color-opacity-sd2, $shadow-distance-sd2, $shadow-distance-sd2, $shadow-spread-sd2);
+$shadow-3: shadow-maker($shadow-sides-base, $shadow-blur-sd3, $shadow-color-opacity-sd3, $shadow-distance-sd3, $shadow-distance-sd3, $shadow-spread-sd3);
+$shadow-3-up: shadow-maker($shadow-sides-up, $shadow-blur-sd3, $shadow-color-opacity-sd3, $shadow-distance-sd3, $shadow-distance-sd3, $shadow-spread-sd3);
+$shadow-3-right: shadow-maker($shadow-sides-right, $shadow-blur-sd3, $shadow-color-opacity-sd3, $shadow-distance-sd3, $shadow-distance-sd3, $shadow-spread-sd3);
+$shadow-3-down: shadow-maker($shadow-sides-down, $shadow-blur-sd3, $shadow-color-opacity-sd3, $shadow-distance-sd3, $shadow-distance-sd3, $shadow-spread-sd3);
+$shadow-3-left: shadow-maker($shadow-sides-left, $shadow-blur-sd3, $shadow-color-opacity-sd3, $shadow-distance-sd3, $shadow-distance-sd3, $shadow-spread-sd3);
+$shadow-4: shadow-maker($shadow-sides-base, $shadow-blur-sd4, $shadow-color-opacity-sd4, $shadow-distance-sd4, $shadow-distance-sd4, $shadow-spread-sd4);
+$shadow-4-up: shadow-maker($shadow-sides-up, $shadow-blur-sd4, $shadow-color-opacity-sd4, $shadow-distance-sd4, $shadow-distance-sd4, $shadow-spread-sd4);
+$shadow-4-right: shadow-maker($shadow-sides-right, $shadow-blur-sd4, $shadow-color-opacity-sd4, $shadow-distance-sd4, $shadow-distance-sd4, $shadow-spread-sd4);
+$shadow-4-down: shadow-maker($shadow-sides-down, $shadow-blur-sd4, $shadow-color-opacity-sd4, $shadow-distance-sd4, $shadow-distance-sd4, $shadow-spread-sd4);
+$shadow-4-left: shadow-maker($shadow-sides-left, $shadow-blur-sd4, $shadow-color-opacity-sd4, $shadow-distance-sd4, $shadow-distance-sd4, $shadow-spread-sd4);
+$shadow-5: shadow-maker($shadow-sides-base, $shadow-blur-sd5, $shadow-color-opacity-sd5, $shadow-distance-sd5, $shadow-distance-sd5, $shadow-spread-sd5);
+$shadow-5-up: shadow-maker($shadow-sides-up, $shadow-blur-sd5, $shadow-color-opacity-sd5, $shadow-distance-sd5, $shadow-distance-sd5, $shadow-spread-sd5);
+$shadow-5-right: shadow-maker($shadow-sides-right, $shadow-blur-sd5, $shadow-color-opacity-sd5, $shadow-distance-sd5, $shadow-distance-sd5, $shadow-spread-sd5);
+$shadow-5-down: shadow-maker($shadow-sides-down, $shadow-blur-sd5, $shadow-color-opacity-sd5, $shadow-distance-sd5, $shadow-distance-sd5, $shadow-spread-sd5);
+$shadow-5-left: shadow-maker($shadow-sides-left, $shadow-blur-sd5, $shadow-color-opacity-sd5, $shadow-distance-sd5, $shadow-distance-sd5, $shadow-spread-sd5);
+
+$shadow-x: 1 !default; // x 方向常规值
+$shadow-y: $shadow-x !default; // y 方向常规值
+
+$shadow-elevation-sd1: $shadow-blur-sd1 !default;
+$shadow-elevation-sd2: $shadow-blur-sd2 !default;
+$shadow-elevation-sd3: $shadow-blur-sd3 !default;
+$shadow-elevation-sd4: $shadow-blur-sd4 !default;
+$shadow-elevation-sd5: $shadow-blur-sd5 !default;
+$shadow-sd0: $shadow-0;
+$shadow-sd1: $shadow-1;
+$shadow-sd1-up: $shadow-1-up;
+$shadow-sd1-right: $shadow-1-right;
+$shadow-sd1-down: $shadow-1-down;
+$shadow-sd1-left: $shadow-1-left;
+$shadow-sd2: $shadow-2;
+$shadow-sd2-up: $shadow-2-up;
+$shadow-sd2-right: $shadow-2-right;
+$shadow-sd2-down: $shadow-2-down;
+$shadow-sd2-left: $shadow-2-left;
+$shadow-sd3: $shadow-3;
+$shadow-sd3-up: $shadow-3-up;
+$shadow-sd3-right: $shadow-3-right;
+$shadow-sd3-down: $shadow-3-down;
+$shadow-sd3-left: $shadow-3-left;
+$shadow-sd4: $shadow-4;
+$shadow-sd4-up: $shadow-4-up;
+$shadow-sd4-right: $shadow-4-right;
+$shadow-sd4-down: $shadow-4-down;
+$shadow-sd4-left: $shadow-4-left;
+$shadow-sd5: $shadow-5;
+$shadow-sd5-up: $shadow-5-up;
+$shadow-sd5-right: $shadow-5-right;
+$shadow-sd5-down: $shadow-5-down;
+$shadow-sd5-left: $shadow-5-left;
+
