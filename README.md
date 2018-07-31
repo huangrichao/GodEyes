@@ -1,7 +1,10 @@
 # godEyes
 #制作：“天眼”团队
+
 #2018.7.25
-#实验室环境下，四个摄像头置于中央处，分别对准实验室的四个角落，在云端抽象好每个摄像头对应的方向。实现识别的同时，能判断出来向与去向。
+
+#实验室环境下，四个摄像头置于中央处，分别对准实验室的四个角落，在云端抽象好每个摄像头对应的方向。实现识别的同时，能判断出对方的来向与去向。
+
 #欢迎观看我们的项目讲解视频：https://v.youku.com/v_show/id_XMzc0OTA2MjQ1Mg==.html?spm=a2h0j.11185381.listitem_page1.5~A
 
 the “GodEye” field biometric identification system based on aliyun link Develop platform.
