@@ -31,7 +31,7 @@ GPIO.setup(servopin, GPIO.OUT, initial=False)
 p = GPIO.PWM(servopin,50) #50HZ  
 p.start(0)  
 p.ChangeDutyCycle(i) #设置转动角度
-time.sleep(0.2)                      #等该20ms周期结束 ,转动时间 
+time.sleep(0.02)                      #等该20ms周期结束 ,转动时间 
 p.ChangeDutyCycle(0)                  #归零信号  
 time.sleep(0.02)   
 #curdata = [240,240]
@@ -84,7 +84,7 @@ while True:
         #udpServer.sendto(data.encode(encoding='utf-8'),addr)
     
         p.ChangeDutyCycle(i) #设置转动角度  
-        time.sleep(0.04)                      #等该20ms周期结束 ,转动时间 
+        time.sleep(0.02)                      #等该20ms周期结束 ,转动时间 
         p.ChangeDutyCycle(0)                  #归零信号  
         time.sleep(0.02)
     
